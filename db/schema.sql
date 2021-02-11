@@ -1,4 +1,4 @@
-DROP burgers_db if exists;
+
 CREATE DATABASE burgers_db;
 
 USE burgers_db;
@@ -6,5 +6,6 @@ USE burgers_db;
 CREATE TABLE burgers (
 id int not null auto_increment primary key,
 burger_name VARCHAR(40) NOT NULL,
-devoured BOOLEAN NOT NULL DEFAULT 0
+devoured BOOLEAN DEFAULT 0
 );
+

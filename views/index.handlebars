@@ -1,6 +1,8 @@
 <h1>Delicious Burgers!</h1>
 
-<h2>Uneaten burgers!</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm"><h2>Fresh burgers!</h2>
 
 <ul>
   {{#each burgers}}
@@ -10,29 +12,30 @@
   {{/each}}
 </ul>
 
-<h2>Eaten Burgers</h2>
+
+
+</div>
+    <div class="col-sm">
+      <img width="75%" src="https://2yw6hl18xgcx2ovds7nmmeug-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/16013091_web1_190320-VMS-randy.jpg" alt="randy from trailerpark boys with burgers">
+    </div>
+    <div class="col-sm"><h2>Eaten Burgers</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
+      {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
-</ul>
+</ul></div>
+  </div>
+</div>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="burger">Burger Name:</label>
+    <input type="text" id="burger" name="name">
   </div>
-
-  <div class="form-group">
-    <label for="slee">Sleepy?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Sleepy!<br>
-    <input type="radio" name="devoured" value="0"> Awake
-  </div>
-
   <button type="submit">Add Burger</button>
 </form>

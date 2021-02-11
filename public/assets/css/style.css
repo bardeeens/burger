@@ -1,7 +1,19 @@
+body {
+background-color: #212121;
+color: white;
+font-family: sans-serif;
+text-align: center;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background-color: #535353;
+  border-radius: 5px;
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  display: inline-block;
 }
 
 .label {
@@ -16,4 +28,13 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+button {
+  border-radius: 20px;
+  background-color: #1DB954;
+  color: white;
+  border: none;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
 }
